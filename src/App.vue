@@ -10,7 +10,9 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-  
+<style lang="scss">
+    .swiper-pagination-bullet-active{
+        background:#fff !important;
+    }
 </style>
 
