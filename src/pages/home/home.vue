@@ -1,20 +1,19 @@
 <template>
   <div>
-      {{msg}}
+      <home-header></home-header>
   </div>
 </template>
 
 <script>
+import HomeHeader from './components/Header'
 export default {
   name: 'Home',
-  data () {
-    return {
-      msg: '这个home页面'
-    }
+  components: {
+    HomeHeader: HomeHeader
   }
 }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
 </style>
+
