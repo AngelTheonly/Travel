@@ -1,6 +1,6 @@
 <template>
   <div class="icons">
-      <swiper class="swiper" :options="swiperOption">
+     <swiper class="swiper" :options="swiperOption">
           <swiper-slide v-for="(page,index) of pages" :key="index">
             <div class="icon" v-for="item of page" :key="item.id">
                 <div class="icon-img"> <img :src="item.imgUrl" alt=""></div>
@@ -69,7 +69,7 @@ export default {
                   desc:'全部玩乐'
               }
           ],
-          swiperOption:{
+           swiperOption:{
                 pagination: '.swiper-pagination',
           }
       }
