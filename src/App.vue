@@ -11,6 +11,8 @@ export default {
 </script>
 
 <style lang="scss">
-  
+  .wrapper .swiper-pagination-bullet-active{
+    background-color: #fff;
+  }
 </style>
 

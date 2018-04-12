@@ -7,7 +7,6 @@
                 <p class="icon-desc">{{item.desc}}</p>
             </div>
           </swiper-slide>  
-          <div  class="swiper-pagination"  slot="pagination"></div>
       </swiper>
   </div>
 </template>
@@ -69,9 +68,7 @@ export default {
                   desc:'全部玩乐'
               }
           ],
-           swiperOption:{
-                pagination: '.swiper-pagination',
-          }
+           swiperOption:{}
       }
   },
   computed:{
