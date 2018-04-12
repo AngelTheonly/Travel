@@ -14,67 +14,20 @@
 <script>
 export default {
   name: 'HomeIcons',
+  props:{
+      list: Array
+  },
   data (){
       return{
-          iconList:[
-              {
-                  id:'001',
-                  imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-                  desc:'景点门票'
-              },
-              {
-                  id:'002',
-                  imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/bd/9f7b9b2b60c1502.png',
-                  desc:'踏青赏花'
-              },
-              {
-                  id:'003',
-                  imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/e3/67df61427c8e1302.png',
-                  desc:'演出'
-              },
-              {
-                  id:'004',
-                  imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/c1/ac058f238b9a6802.png',
-                  desc:'一日游'
-              },
-              {
-                  id:'005',
-                  imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/54/35899492b1302802.png',
-                  desc:'必游榜单'
-              },
-              {
-                  id:'006',
-                  imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png',
-                  desc:'动植物园'
-              },
-              {
-                  id:'007',
-                  imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/20/831d62d2e1c7be02.png',
-                  desc:'名胜古迹'
-              },
-              {
-                  id:'008',
-                  imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/54/35899492b1302802.png',
-                  desc:'公园'
-              },
-              {
-                  id:'009',
-                  imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png',
-                  desc:'自然风光'
-              },
-              {
-                  id:'010',
-                  imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/80/416c6ab3368d1f02.png',
-                  desc:'全部玩乐'
-              }
-          ],
-           swiperOption:{}
+           swiperOption:{
+               autoplay: false
+           }
       }
   },
   computed:{
       pages () {
           const pages= [];
-          this.iconList.forEach((item,index) => {
+          this.list.forEach((item,index) => {
               const page = Math.floor(index / 8)
               if(!pages[page]){
                   pages[page]=[]

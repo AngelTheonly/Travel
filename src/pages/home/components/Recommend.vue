@@ -2,7 +2,7 @@
   <div>
     <div class="tlitle"> 热销推荐 </div>
     <ul>
-        <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+        <li class="item border-bottom" v-for="item of list" :key="item.id">
             <div class="item-img-wrapper">
                 <img class="item-img" :src="item.imgUrl"/>
             </div>
@@ -19,29 +19,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-      return{
-          recommendList:[
-              {
-              id:'001',
-              imgUrl:'http://img1.qunarzz.com/sight/p0/1411/1a/5582f9f24bc50b475a8cbda4c5ac8d24.water.jpg_110x110_95677b58.jpg',
-              title:'秦始皇陵博物院（兵马俑）',
-              desc:'位于陕西省西安市临潼处...'
-             },
-              {
-              id:'002',
-              imgUrl:'http://img1.qunarzz.com/sight/p0/1411/67/272c374a876b2f9ec9860551c993c521.water.jpg_200x200_6d9f71df.jpg',
-              title:'西安钟楼',
-              desc:'位于陕西省西安市...'
-             },
-              {
-              id:'003',
-              imgUrl:'http://img1.qunarzz.com/sight/p0/1704/a3/a3e4f87ebd5c55a1a3.water.jpg_200x200_f1fc0289.jpg',
-              title:'西安幻太奇梦幻海洋馆',
-              desc:'西安幻太奇梦幻海洋馆...'
-             },
-          ]
-      }
+  props:{
+      list:Array
   }
 }
 </script>
