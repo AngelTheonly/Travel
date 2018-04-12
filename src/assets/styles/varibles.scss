@@ -1,5 +1,6 @@
 $bgColor:red;
 $darkTextColor:#333;
+$headerHeight:.86rem;
 @mixin ellipsis() {
     overflow: hidden;
     white-space: nowrap;
