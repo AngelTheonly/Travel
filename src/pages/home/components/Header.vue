@@ -26,6 +26,7 @@ export default {
     line-height: $headerHeight;
     background: $bgColor;
     color: #fff;
+    box-shadow: 0px 1px 3px rgba($bgColor,.5);
     .header-left{
       width: .64rem;
       float: left;
