@@ -2,20 +2,20 @@
 
 > 这是慕课网去哪儿课程项目代码
 
-## Build Setup
+# 下面是本人的简历网页
 
-``` bash
-# install dependencies
-npm install
+>  [www.shuai1021.com](http://www.shuai1021.com)
 
-# serve with hot reload at localhost:8080
-npm run dev 
+# 自我评价
 
-# build for production with minification
-npm run build
+> 对复杂、有逻辑的事物抱有 好奇心 ， 有耐心 ，可以持续十几小时投入研究。自学能力强 ，工作之余自学编程、英语
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+## 我所掌握的技能特长
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+> 熟练掌握HTML(5)、CSS(3)，能够像素级还原的静态页面，熟悉手机端页面的开发流程。
+> 能够使用常用移动端页面布局（REM布局、响应式布局）进行开发。 
+> 熟练原生Javascript，熟悉重要概念、对象原型，闭包，作用域，面向对象等。
+> 了解VUE/MUI框架基本原理能够使用Vue和MUI进行项目开发。 
+> 了解 HTTP 协议，熟悉掌握AJAX请求，能够与后端良好的配合开发。
+> 熟悉 Git，能够完成基本的代码提交、分支管理、冲突合并。 
+> 擅长使用的编辑器HBuider/vs Code，熟练使用浏览器F12 开发者工具来调试网页
