@@ -1,10 +1,15 @@
 <template>
   <div>
       <home-header :city="city"></home-header>
-      <home-swiper :list="swiperList"></home-swiper>
-      <home-icons :list="iconList"></home-icons>
-      <home-recommend :list="recommendList"></home-recommend>
-      <home-weekend :list="weekendList"></home-weekend>
+      <div class="home-content" ref="wrapper">
+         <div>
+            <home-swiper :list="swiperList"></home-swiper>
+            <home-icons :list="iconList"></home-icons>
+            <home-recommend :list="recommendList"></home-recommend>
+            <home-weekend :list="weekendList"></home-weekend>
+         </div>
+      </div>
+     
   </div>
 </template>
 
@@ -15,6 +20,7 @@ import HomeIcons from './components/Icons'
 import HomeRecommend from './components/Recommend'
 import HomeWeekend from './components/Weekend'
 import axios from 'axios'
+import Bscroll from 'better-scroll'
 
 export default {
   name: 'Home',
@@ -53,11 +59,21 @@ export default {
     }
   },
   mounted () {
+    this.scroll = new Bscroll(this.$refs.wrapper)
     this.getHomeInfo()
   }
 }
 </script>
 
 <style lang="scss" scoped>
+@import "~styles/varibles.scss";
+.home-content{
+  position: absolute;
+  overflow: hidden;
+  top: $headerHeight;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 </style>
 
