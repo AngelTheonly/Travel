@@ -61,7 +61,6 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  // background: #666;
   .area {
     .title {
       line-height: 0.6rem;
@@ -83,11 +82,13 @@ export default {
         float: left;
         width: 33.33%;
         .button {
-          padding: 0.1rem;
+          padding: 0.15rem 0.1rem;
           margin: 0.1rem;
           text-align: center;
-          border: 0.02rem solid #ccc;
-          border-radius: 0.06rem;
+          border: 0.02rem solid rgba($bgColor,.1);
+          border-radius: 0.1rem;
+          color: rgba($bgColor,.5);
+          background-color: rgba($bgColor,.2);
         }
       }
     }

@@ -42,7 +42,7 @@ export default {
       margin-left: .2rem;
       padding-left: .2rem;
       background-color: #fff;
-      border-radius: .1rem;
+      border-radius: 1rem;
       color: #ccc;
     }
    .header-right{
