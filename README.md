@@ -1,6 +1,6 @@
 # travel
 
-> A Vue.js project
+> 这是慕课网去哪儿课程项目代码
 
 ## Build Setup
 
@@ -9,7 +9,7 @@
 npm install
 
 # serve with hot reload at localhost:8080
-npm run dev 魏帅
+npm run dev 
 
 # build for production with minification
 npm run build
