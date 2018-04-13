@@ -60,7 +60,7 @@ export default {
            }
            .item-desc{
                line-height: .4rem;
-               color: #ccc;
+               color: #999;
                @include ellipsis()
            }
            .item-button{
